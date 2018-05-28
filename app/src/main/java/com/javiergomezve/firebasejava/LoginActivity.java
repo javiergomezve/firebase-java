@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Reset password", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
             }
         });
 
